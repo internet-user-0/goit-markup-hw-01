@@ -1,0 +1,73 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+:root{
+   /* шрифты */
+   --basic-font-style: 'Roboto', sans-serif;
+   --secondary-font-style: 'Raleway', sans-serif;
+   /* цвет фона */
+   --basic-background: rgb(255, 255, 255);
+   --secondary-background: rgb(47, 48, 58);
+   /* цвета текста */
+   --color-text:#212121;
+   --color-text-link:#757575;
+   /* цвета текста (hover)*/
+   --color-text-btn: #2196F3;
+}
+
+
+body{
+   font-family:var(--basic-font-style);
+   background-color: var(--basic-background);
+}
+
+
+
+
+/* header навигация контакты */
+.navigation{
+}
+.nav-item-link{
+color: var(--color-text);
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0.02em;
+}
+.nav-item-link:hover,
+.nav-link:hover{
+color: var(--color-text-btn);
+}
+
+.nav-link{
+   color: var(--color-text-link);
+}
+
+
+
+/* контакты */
+.heading{
+   background-color: var(--secondary-background);
+}
+
+
+
+
+
+
+/* подвал контактов  */
+.minor-information {
+   background-color: var(--secondary-background);
+}
+
+/* специфычные */
+.logo{
+   color: var(--color-text);
+   font-family: var(--secondary-font-style);
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 0.8;
+}
+.logo-span{
+   color: var(--color-text-btn);
+}
