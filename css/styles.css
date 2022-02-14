@@ -9,13 +9,16 @@ font-family: 'Roboto', sans-serif; */
    /* цвет фона */
    --basic-background: rgb(255, 255, 255);
    --secondary-background: rgb(47, 48, 58);
+   /* цвет фона кнопок */
+   --background-btn:#f5f4fa;
+   --background-btn-hover:rgb(33, 150, 243);
    /* цвета текста */
-   --color-text:#212121;
-   --color-text-link:#757575;
+   --color-text:rgb(33, 33, 33);
+   --color-text-two:rgb(117, 117, 117);
+   --color-text-link:rgb(117, 117, 117);
    /* цвета текста (hover)*/
-   --color-text-btn: #2196F3;
+   --color-text-btn: rgb(33, 150, 243);
 }
-
 
 body{
    font-family:var(--basic-font-style);
@@ -23,51 +26,186 @@ body{
 }
 
 
-
-
 /* header навигация контакты */
-.navigation{
+.list,
+.info-block{
+   list-style: none;
 }
 .nav-item-link{
+   text-decoration: none;
 color: var(--color-text);
 font-weight: 500;
 line-height: 16px;
 letter-spacing: 0.02em;
 }
-.nav-item-link:hover,
-.nav-link:hover{
-color: var(--color-text-btn);
-}
-
 .nav-link{
+   text-decoration: none;
    color: var(--color-text-link);
 }
-
-
+.nav-item-link:hover,
+.nav-link:hover,
+.minor-linc:hover,
+.minor-address:hover{
+color: var(--color-text-btn);
+}
+/* navigation */
+.nav-btn {
+   text-decoration: none;
+   background-color: var(--background-btn);
+   color: var(--color-text);
+   font-weight: 500;
+font-size: 16px;
+line-height: 0.6;
+border-radius: 4px;
+}
+.nav-btn:hover{
+   color: rgb(255, 255, 255);
+   background-color: var(--background-btn-hover);
+}
 
 /* контакты */
 .heading{
    background-color: var(--secondary-background);
 }
+.basic-heading{
+   color: rgb(255, 255, 255);
+   font-weight: 900;
+font-size: 44px;
+line-height: 0.73;
+}
+.basic-btn{
+   text-decoration: none;
+   font-weight: 600;
+font-size: 16px;
+line-height: 0.5;
+background: rgb(33, 150, 243);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+color: rgb(255, 255, 255);
+}
+/* секция приемущeств */
+.details-item-element {
+   color: var(--color-text);
+font-weight: 600;
+font-size: 14px;
+line-height: 0.87;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.details-item-part {
+   font-size: 14px;
+   line-height: 24px;
+color: var(--color-text-two);
+letter-spacing: 0.03em;
+}
+.details{
+   background-color: rgb(229, 229, 229);
+}
 
 
+/* список картинок */
+.small-header{
+   font-weight: bold;
+font-size: 36px;
+line-height: 0.87;
+}
+.list-image-picture{
+   width: 370px;
+height: 295px;
+}
 
 
+/* список участников */
+.hero{
+   background-color:  rgb(245, 244, 250);;
+}
+.small-header {
+   color: var(--color-text);
+   font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.03em;
+}
+.personal-image{
+   width: 270px;
+height: 260px;
+}
+.personal-name {
+   color: var(--color-text);
+   font-weight: 500;
+font-size: 16px;
+line-height: 0.8;
+letter-spacing: 0.03em;
+}
+.personal-profession {
+   color: var(--color-text-two);
+   font-size: 16px;
+line-height: 0.8;
+}
 
+
+/* basic information */
+.info-block{
+   background-color: rgb(229, 229, 229);;
+}
+.info-item-img {
+   width: 370px;
+height: 295px;
+}
+.info-item-name {
+   font-weight: 600;
+   font-size: 18px;
+line-height: 0.5;
+color: var(--color-text);
+letter-spacing: 0.06em;
+}
+.info-item-btn {
+   text-decoration: none;
+   font-size: 16px;
+line-height: 0.5;
+color: var(--color-text-two);
+}
 
 /* подвал контактов  */
+address{
+   font-style: normal;
+}
 .minor-information {
    background-color: var(--secondary-background);
 }
+.minor-address {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 14px;
+line-height: 0.6;
+}
+.minor-linc {
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.6);
+}
+
 
 /* специфычные */
 .logo{
+   text-decoration: none;
    color: var(--color-text);
    font-family: var(--secondary-font-style);
-   font-weight: bold;
+   font-weight: 600;
+   font-size: 26px;
+   line-height: 0.8;
+}
+.logo-footer{
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-family: var(--secondary-font-style);
+   font-weight: 600;
    font-size: 26px;
    line-height: 0.8;
 }
 .logo-span{
    color: var(--color-text-btn);
 }
+
+
+
+

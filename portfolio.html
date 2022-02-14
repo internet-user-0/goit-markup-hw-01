@@ -12,24 +12,26 @@
    <link rel="stylesheet" href="./css/styles.css">
    <title>Document</title>
 </head>
+
+
 <body>
       <!-- header навигация контакты -->
-      <header>
-         <a href="" class="logo">WebStudio</a>
+      <header class="header">
+         <a href="" class="logo"><span class="logo-span">Web</span>Studio</a>
       <nav class="navigation">
-         <ul class="navigation-list">
+         <ul class="list">
             <li class="nav-list-item">
-               <a href="">Студия</a>
+               <a class="nav-item-link" href="http://127.0.0.1:5500/index.html">Студия</a>
             </li>
             <li class="nav-list-item">
-               <a href="">Портфолио</a>
+               <a class="nav-item-link" href="http://127.0.0.1:5500/portfolio.html">Портфолио</a>
             </li>
             <li class="nav-list-item">
-               <a href="">Контакты</a>
+               <a class="nav-item-link" href="">Контакты</a>
             </li>
          </ul>
       </nav>
-      <ul>
+      <ul class="list">
          <li>
             <a href="mailto:info@devstudio.com" class="nav-link">info@devstudio.com</a>
          </li>
@@ -40,17 +42,28 @@
    </header>
    <!-- main основные секции -->
    <main>
-      <!-- navigation -->
-   <nav>
-      <a class="nav-btn" href="" type="button">Все</a>
-      <a class="nav-btn" href="" type="button">Веб-сайты</a>
-      <a class="nav-btn" href="" type="button">Приложения</a>
-      <a class="nav-btn" href="" type="button">Дизайн</a>
-      <a class="nav-btn" href="" type="button">Маркетинг</a>
-   </nav>
    <!-- basic information -->
    <section>
 <ul class="info-block">
+   <li>
+      <ul class="list">
+         <li class="list-item-nav">
+            <button class="nav-btn" href="" type="button">Все</button>
+         </li>
+         <li class="list-item-nav">
+            <button class="nav-btn" href="" type="button">Веб-сайты</button>
+         </li>
+         <li class="list-item-nav">
+            <button class="nav-btn" href="" type="button">Приложения</button>
+         </li>
+         <li class="list-item-nav">
+            <button class="nav-btn" href="" type="button">Дизайн</button>
+         </li>
+         <li class="list-item-nav">
+            <button class="nav-btn" href="" type="button">Маркетинг</button>
+         </li>
+   </ul>
+   </li>
    <li class="info-block-item">
       <img class="info-item-img" src="./images-portfolio/img (биография).jpg" alt="биография" width="340">
       <p class="info-item-name">Технокряк</p>
@@ -101,9 +114,9 @@
    </main>
             <!-- подвал контактов -->
             <footer class="minor-information">
-               <a href="" class="logo">WebStudio</a>
+               <a href="" class="logo-footer"><span class="logo-span">Web</span>Studio</a>
                <address>
-                  <ul class="minor-list">
+                  <ul class="list">
                      <li class="minor-list-item">
                         <a class="minor-address" href="https://goo.gl/maps/fYbnDUNzqQSZUCWdA">г. Киев, пр-т Леси Украинки, 26</a>
                      </li>
