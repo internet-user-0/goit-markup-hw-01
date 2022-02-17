@@ -99,7 +99,6 @@ color: var(--color-text-btn);
    letter-spacing: 0.06em;
    color: #FFFFFF;
    background-color: var(--background-btn-hover);
-   border-radius: 4px;
 }
 /* секция приемущeств */
 .details-item-element {
