@@ -7,22 +7,21 @@ font-family: 'Roboto', sans-serif; */
    --basic-font-style: 'Roboto', sans-serif;
    --secondary-font-style: 'Raleway', sans-serif;
    /* цвет фона */
-   --basic-background: rgb(255, 255, 255);
-   --secondary-background: rgb(47, 48, 58);
+   --basic-background: #ffffff;
+   --secondary-background: #2f303a;
    /* цвет фона кнопок */
    --background-btn:#f5f4fa;
-   --background-btn-hover:rgb(33, 150, 243);
+   --background-btn-hover:#2196f3;
    /* цвета текста */
-   --color-text:rgb(33, 33, 33);
-   --color-text-two:rgb(117, 117, 117);
-   --color-text-link:rgb(117, 117, 117);
+   --color-text:#212121;
+   --color-text-two:#757575;
+   --color-text-link:#757575;
    /* цвета текста (hover)*/
-   --color-text-btn: rgb(33, 150, 243);
+   --color-text-btn: #2196f3;
 }
 
 body{
    font-family:var(--basic-font-style);
-   background-color: var(--basic-background);
 }
 
 
@@ -34,13 +33,25 @@ body{
 .nav-item-link{
    text-decoration: none;
 color: var(--color-text);
+
+font-style: normal;
 font-weight: 500;
-line-height: 16px;
+font-size: 14px;
+line-height: 1.1;
+
 letter-spacing: 0.02em;
 }
 .nav-link{
    text-decoration: none;
    color: var(--color-text-link);
+
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.1;
+
+   letter-spacing: 0.02em;
+
 }
 .nav-item-link:hover,
 .nav-link:hover,
@@ -51,16 +62,19 @@ color: var(--color-text-btn);
 /* navigation */
 .nav-btn {
    text-decoration: none;
-   background-color: var(--background-btn);
-   color: var(--color-text);
+   font-style: normal;
    font-weight: 500;
-font-size: 16px;
-line-height: 0.6;
-border-radius: 4px;
+   font-size: 16px;
+   line-height: 1.1;
+   letter-spacing: 0.03em;
 }
 .nav-btn:hover{
-   color: rgb(255, 255, 255);
+   color: #ffffff;
    background-color: var(--background-btn-hover);
+   cursor: pointer;
+}
+.basic-btn:hover{
+   cursor: pointer;
 }
 
 /* контакты */
@@ -68,103 +82,107 @@ border-radius: 4px;
    background-color: var(--secondary-background);
 }
 .basic-heading{
-   color: rgb(255, 255, 255);
+   color: #ffffff;
+   font-style: normal;
    font-weight: 900;
-font-size: 44px;
-line-height: 0.73;
+   font-size: 44px;
+   line-height: 1.3;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
 }
 .basic-btn{
    text-decoration: none;
-   font-weight: 600;
-font-size: 16px;
-line-height: 0.5;
-background: rgb(33, 150, 243);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-color: rgb(255, 255, 255);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.1;
+   letter-spacing: 0.06em;
+   color: #FFFFFF;
+   background-color: var(--background-btn-hover);
+   border-radius: 4px;
 }
 /* секция приемущeств */
 .details-item-element {
    color: var(--color-text);
-font-weight: 600;
-font-size: 14px;
-line-height: 0.87;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 1.1;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
 }
 .details-item-part {
-   font-size: 14px;
-   line-height: 24px;
 color: var(--color-text-two);
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.2;
 letter-spacing: 0.03em;
 }
-.details{
-   background-color: rgb(229, 229, 229);
-}
+
 
 
 /* список картинок */
 .small-header{
-   font-weight: bold;
-font-size: 36px;
-line-height: 0.87;
-}
-.list-image-picture{
-   width: 370px;
-height: 295px;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
 
 
 /* список участников */
-.hero{
-   background-color:  rgb(245, 244, 250);;
-}
+
 .small-header {
    color: var(--color-text);
-   font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: 0.03em;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
-.personal-image{
-   width: 270px;
-height: 260px;
-}
+
 .personal-name {
    color: var(--color-text);
+   font-style: normal;
    font-weight: 500;
-font-size: 16px;
-line-height: 0.8;
-letter-spacing: 0.03em;
+   font-size: 16px;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
 .personal-profession {
    color: var(--color-text-two);
+   font-style: normal;
+   font-weight: normal;
    font-size: 16px;
-line-height: 0.8;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
 
 
 /* basic information */
-.info-block{
-   background-color: rgb(229, 229, 229);;
+.info-item-btn{
+   text-decoration: none;
 }
-.info-item-img {
-   width: 370px;
-height: 295px;
-}
+
 .info-item-name {
-   font-weight: 600;
-   font-size: 18px;
-line-height: 0.5;
 color: var(--color-text);
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2.0;
 letter-spacing: 0.06em;
 }
-.info-item-btn {
-   text-decoration: none;
+.info-item-txt{
+   color: var(--color-text-two);
+   font-style: normal;
+   font-weight: normal;
    font-size: 16px;
-line-height: 0.5;
-color: var(--color-text-two);
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
+
 
 /* подвал контактов  */
 address{
@@ -174,14 +192,22 @@ address{
    background-color: var(--secondary-background);
 }
 .minor-address {
+   color: #ffffff;
    text-decoration: none;
-   color: rgb(255, 255, 255);
+   font-style: normal;
+   font-weight: normal;
    font-size: 14px;
-line-height: 0.6;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
 .minor-linc {
    text-decoration: none;
    color: rgba(255, 255, 255, 0.6);
+   font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.03em;
 }
 
 
@@ -190,17 +216,21 @@ line-height: 0.6;
    text-decoration: none;
    color: var(--color-text);
    font-family: var(--secondary-font-style);
-   font-weight: 600;
+   font-style: normal;
+   font-weight: 700;
    font-size: 26px;
-   line-height: 0.8;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
 .logo-footer{
    text-decoration: none;
    color: rgb(255, 255, 255);
    font-family: var(--secondary-font-style);
-   font-weight: 600;
+   font-style: normal;
+   font-weight: 700;
    font-size: 26px;
-   line-height: 0.8;
+   line-height: 1.2;
+   letter-spacing: 0.03em;
 }
 .logo-span{
    color: var(--color-text-btn);
